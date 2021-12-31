@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b6d7332675.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <!--
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+        -->
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Justin Chow</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Engineering Science Student at the University of Toronto
+      </p>
+      <img src="../images/profile.jpg" alt="" class="intro__img" />
+    </section>
+
+    <hr />
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Aspiring Software Engineer
+      </p>
+
+      <div class="about-me__body">
+        <h3>Background</h3>
+        <p>
+          I am a first year Engineering Science student at the University of
+          Toronto planning on majoring in Machine Intelligence.
+        </p>
+        <p>
+          I have been programming for 5 years and have experience with Python,
+          HTML, CSS, Javascript, and Java. For some notable projects, see my
+          portfolio section.
+        </p>
+        <a href="#work" class="btn">My Portfolio</a>
+        <p>
+          I am passionate about software engineering, data science, and web
+          development. Currently seeking Summer 2022 internships or research
+          positions.
+        </p>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Python (5 Years)</li>
+          <li>HTML, CSS, Javascript (2 Years)</li>
+          <li>Java (2 years)</li>
+          <li>Git and Version Control</li>
+          <li>Object-oriented Programming (OOP)</li>
+          <li>Time Complexity and Big O Notation</li>
+        </ul>
+        <h3>CV/Resume</h3>
+        <ul>
+          <li>
+            <a href="../Justin_Chow_Winter2022_CV.pdf" class="resume__link"
+              >Winter_2022_CV</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <img src="../images/profile_2.jpg" alt="" class="about-me__img" />
+    </section>
+
+    <hr />
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Education</h3>
+          <p>
+            I am a first year engineering science student at the University of
+            Toronto planning on majoring in machine intellience.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Skills</h3>
+          <p>
+            I have experience with several coding languages including Python,
+            Java, Javascript, HTML, and CSS. See my portfolio section for some
+            notable projects.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Goals</h3>
+          <p>
+            I am passionate about web development, data science, and software
+            engineering. I am currently seeking internships or research
+            positions for Summer 2022.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title">Portfolio</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A Selection of My Work
+      </p>
+
+      <div class="portfolio">
+        <div class="portfolio__item-description">
+          <h3>Tic-Tac-Toe</h3>
+          <p>Interactive Tic-Tac-Toe game for two players.</p>
+          <p>
+            Written using HTML, CSS and Javascript. Uses factory functions and
+            module patterns
+          </p>
+          <a href="tic-tac-toe.html" class="btn portfolio-btn">Learn More</a>
+        </div>
+        <a href="tic-tac-toe.html" class="portfolio__item">
+          <img src="../images/tictactoe.PNG" alt="" class="portfolio__img" />
+        </a>
+
+        <div class="portfolio__item-description">
+          <h3>Calculator</h3>
+          <p>
+            A basic calculator interface that allows users to perform simple
+            calculations.
+          </p>
+          <p>
+            Written using HTML, CSS and Javascript. Incorporates Object-Oriented
+            Programming
+          </p>
+          <a href="calculator.html" class="btn portfolio-btn">Learn More</a>
+        </div>
+        <a href="calculator.html" class="portfolio__item">
+          <img src="../images/calculator.PNG" alt="" class="portfolio__img" />
+        </a>
+
+        <div class="portfolio__item-description">
+          <h3>Library Webapp</h3>
+          <p>
+            A library webapp that helps users to keep track of their books.
+            Allows users to add or delete books and change their read status
+          </p>
+          <p>
+            Written using HTML, CSS, and Javascript. Incorporates
+            Object-Oriented Programming
+          </p>
+          <a href="library.html" class="btn portfolio-btn">Learn More</a>
+        </div>
+        <a href="library.html" class="portfolio__item">
+          <img src="../images/library.PNG" alt="" class="portfolio__img" />
+        </a>
+
+        <div class="portfolio__item-description">
+          <h3>Gomoku</h3>
+          <p>
+            A simple AI engine for the classic game Gomoku played on an 8x8
+            board.
+          </p>
+          <p>Written in Python for ESC180 Programming Class.</p>
+          <a href="gomoku.html" class="btn portfolio-btn">Learn More</a>
+        </div>
+        <a href="gomoku.html" class="portfolio__item">
+          <img src="../images/gomoku.PNG" alt="" class="portfolio__img" />
+        </a>
+
+        <div class="portfolio__item-description">
+          <h3>Synonyms</h3>
+          <p>
+            A Program that calculates the semantic similarity between any pair
+            of words.
+          </p>
+          <p>Written in Python for ESC180 Programming Class.</p>
+          <a href="synonyms.html" class="btn portfolio-btn">Learn More</a>
+        </div>
+        <a href="synonyms.html" class="portfolio__item">
+          <img
+            src="../images/semantic similarity.PNG"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="mailto:just6660@gmail.com" class="footer__link"
+        >just6660@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/just6660">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.instagram.com/justinn.chow/"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
