@@ -387,6 +387,7 @@ header {
 }
 
 .about-me__img {
+  display: none;
   box-shadow: var(--bs);
 }
 
@@ -416,6 +417,7 @@ header {
   }
 
   .about-me__img {
+    display: inline;
     grid-area: img;
     position: relative;
   }
