@@ -1,17 +1,3 @@
-/* 
-1. make variables and data- shit
-2. calculator class
-3. functions (clear, delete, equals, append-number, append-operation, display)
-4. clear
-    set previous-operand to 0
-    set current-operand to 0
-    set append-operation to undefined
-5.delete 
-    
-4. display function
-5.
-*/
-
 class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
     this.previousOperandTextElement = previousOperandTextElement;
